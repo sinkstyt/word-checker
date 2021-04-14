@@ -19,5 +19,12 @@ namespace Characters.Tests
       Palindrome test = new Palindrome("aa");
       Assert.AreEqual(true, test.IsPalindrome(test.NewPalindrome));
     }
+
+    [TestMethod]
+    public void IsPalindrome_RecognizesWhenFirstAndLastCharsAreSame_True()
+    {
+      Palindrome again = new Palindrome("arbitrara");
+      Assert.AreEqual(true, again.IsPalindrome(again.NewPalindrome));
+    }
   }
 }

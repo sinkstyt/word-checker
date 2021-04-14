@@ -13,7 +13,14 @@ namespace Characters
     {
       if (test.Length >= 1)
       {
-        return true;
+        if (test[0] == test[test.Length - 1])
+        {
+          return true;
+        }
+        else
+        {
+          return false;
+        }
       }
       else 
       {
