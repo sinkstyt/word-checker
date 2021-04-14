@@ -9,9 +9,16 @@ namespace Characters
       NewPalindrome = aPalindrome;
     }
 
-    public bool IsPalindrome()
+    public bool IsPalindrome(string test)
     {
-      return true;
+      if (test.Length >= 1)
+      {
+        return true;
+      }
+      else 
+      {
+        return false;
+      }
     }
   }
 }

@@ -7,10 +7,17 @@ namespace Characters.Tests
   public class PalindromeTests
   {
     [TestMethod]
-    public void IsPalindrome_ChecksForOneOrMoreCharactersInExampleString_True()
+    public void IsPalindrome_DoesReturnABoolean_True()
     {
       Palindrome test = new Palindrome("racecar");
-      Assert.AreEqual(true, test.IsPalindrome());
+      Assert.AreEqual(true, test.IsPalindrome(test.NewPalindrome));
+    }
+
+    [TestMethod]
+    public void IsPalindrome_ChecksForMinimumOfTwoCharactersInAString_True()
+    {
+      Palindrome test = new Palindrome("aa");
+      Assert.AreEqual(true, test.IsPalindrome(test.NewPalindrome));
     }
   }
 }
