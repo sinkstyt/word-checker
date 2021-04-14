@@ -11,7 +11,7 @@ namespace Characters
 
     public bool IsPalindrome()
     {
-      return false;
+      return true;
     }
   }
 }
